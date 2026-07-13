@@ -1,8 +1,8 @@
-import { Settings as SettingsIcon, Sun, Moon, Monitor, RotateCcw, Globe, Sparkles, Bell, Eye, Image as ImageIcon, Zap, RefreshCw, Database, Trash2 } from "lucide-react";
+import { Settings as SettingsIcon, Sun, Moon, Monitor, RotateCcw, Sparkles, Bell, Eye, Image as ImageIcon, Zap, RefreshCw, Database } from "lucide-react";
 import { PageHeader } from "@/components/PageHeader";
 import { useSettings } from "@/lib/store";
 import { useUpdater } from "@/hooks/useUpdater";
-import { formatDate, timeAgo } from "@/lib/utils";
+import { timeAgo } from "@/lib/utils";
 import type { ThemeMode, Language, IconSize, StartupPage } from "@/types";
 import { motion } from "framer-motion";
 

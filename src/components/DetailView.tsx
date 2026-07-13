@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { X, ArrowLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import type { AIItem, AgentItem } from "@/types";
 import { LogoImage } from "./LogoImage";
@@ -8,7 +8,7 @@ import { FavoriteButton } from "./FavoriteButton";
 import { openExternal } from "@/lib/browser";
 import { formatDate, timeAgo } from "@/lib/utils";
 import { useRecent } from "@/lib/store";
-import { ExternalLink, Github, BookOpen, Code2, Globe, Sparkles, Calendar, Building, Tag, Cpu } from "lucide-react";
+import { Github, BookOpen, Code2, Globe, Sparkles, Calendar, Building, Tag, Cpu } from "lucide-react";
 
 interface DetailViewProps {
   item: AIItem | AgentItem;

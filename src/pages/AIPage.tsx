@@ -28,7 +28,7 @@ export function AIPage() {
   }, [query, tags, sortBy, setParams]);
 
   const filtered = useMemo(() => {
-    let items = searchAIs(AI_DATABASE, query, tags);
+    const items = searchAIs(AI_DATABASE, query, tags);
     const sorted = [...items];
     switch (sortBy) {
       case "latest":

@@ -118,7 +118,7 @@ export function getLogoFallback(letter: string): string {
   )}`;
 }
 
-export function buildLogoUrl(domain: string, name: string): string {
+export function buildLogoUrl(domain: string, _name: string): string {
   const cleanDomain = domain
     .replace(/^https?:\/\//, "")
     .replace(/^www\./, "")

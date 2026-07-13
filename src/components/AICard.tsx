@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Info, Star } from "lucide-react";
+import { ExternalLink, Info } from "lucide-react";
 import { LogoImage } from "./LogoImage";
 import { FavoriteButton } from "./FavoriteButton";
 import type { AIItem } from "@/types";

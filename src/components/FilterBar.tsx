@@ -1,4 +1,3 @@
-import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpDown, X } from "lucide-react";
 import { TAG_LIBRARY, getTagColor } from "@/data/tags";
 import { cn } from "@/lib/utils";

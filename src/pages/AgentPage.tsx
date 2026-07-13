@@ -28,7 +28,7 @@ export function AgentPage() {
   }, [query, tags, sortBy, setParams]);
 
   const filtered = useMemo(() => {
-    let items = searchAgents(AGENT_DATABASE, query, tags);
+    const items = searchAgents(AGENT_DATABASE, query, tags);
     const sorted = [...items];
     switch (sortBy) {
       case "latest":
