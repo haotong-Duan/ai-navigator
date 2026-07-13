@@ -1,0 +1,104 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "AI Navigator",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "all": false,
+        "open": true
+      },
+      "fs": {
+        "all": true,
+        "scope": [
+          "$APPDATA/*",
+          "$APPCONFIG/*",
+          "$APPLOCALDATA/*",
+          "$DOCUMENT/*",
+          "$DOWNLOAD/*",
+          "$HOME/*",
+          "$RESOURCE/*"
+        ]
+      },
+      "path": {
+        "all": true
+      },
+      "window": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "deb": { "depends": [] },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.ainavigator.app",
+      "longDescription": "AI Navigator is a one-stop desktop application to access all global AI models and Agent platforms with a beautiful macOS-native experience.",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": ["assets/*"],
+      "shortDescription": "AI & Agent Hub",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null,
+      "freezePrototype": false
+    },
+    "macOSPrivateApi": true,
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "title": "AI Navigator",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 1024,
+        "minHeight": 680,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true,
+        "transparent": false,
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true,
+        "acceptFirstMouse": true,
+        "fileDropEnabled": false,
+        "center": true,
+        "visible": true
+      }
+    ]
+  }
+}

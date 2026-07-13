@@ -1,0 +1,39 @@
+[package]
+name = "ai-navigator"
+version = "1.0.0"
+description = "AI & Agent Hub - One-stop desktop navigator for global AI models and agents"
+authors = ["AI Navigator Team"]
+license = "MIT"
+repository = "https://github.com/ai-navigator/ai-navigator"
+edition = "2021"
+
+[lib]
+name = "ai_navigator_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.6", features = [ "macos-private-api", "shell-open", "dialog-open", "window-all", "fs-all", "path-all"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+tokio = { version = "1.36", features = ["full"] }
+anyhow = "1.0"
+thiserror = "1.0"
+log = "0.4"
+env_logger = "0.11"
+chrono = { version = "0.4", features = ["serde"] }
+open = "5"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
