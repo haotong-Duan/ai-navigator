@@ -38,14 +38,6 @@
 - 🌐 **Auto-updating database** — always in sync with the latest AI releases.
 - 💾 **100% local** — your data never leaves your machine.
 
-## 📸 Screenshots
-
-> macOS Sonoma / Sequoia-inspired UI with frosted glass sidebar, vibrant mesh gradient background, and rounded cards with subtle shadow.
-
-| Home | AI Models | Detail |
-| --- | --- | --- |
-| Glassmorphism hero, stats, recent | Searchable grid with tags & sort | Models, pricing, installation |
-
 ## 🛠 Tech Stack
 
 - **Frontend:** [React 18](https://react.dev) · [TypeScript 5](https://www.typescriptlang.org) · [Vite 5](https://vitejs.dev) · [TailwindCSS 3](https://tailwindcss.com) · [Framer Motion 11](https://www.framer.com/motion/)
