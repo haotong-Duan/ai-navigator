@@ -176,7 +176,7 @@ The easiest way to contribute is to **add a new AI or Agent** to the catalog:
   description: "One-liner.",
   category: "chat",
   tags: ["Chat", "API"],
-  lastUpdate: "2025-07",
+  lastUpdate: "2026-07",
 }
 ```
 
