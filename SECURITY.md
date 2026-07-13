@@ -13,15 +13,6 @@ If you discover a security vulnerability in AI Navigator, please report it priva
 
 **Email:** 15102633721@163.com
 
-Please **do not** open a public GitHub issue for security vulnerabilities. We take all reports seriously and will respond within 48 hours.
-
-When reporting, please include:
-
-- A clear description of the vulnerability
-- Steps to reproduce
-- Potential impact
-- Any known mitigations
-
 ## Scope
 
 AI Navigator is a fully local desktop application. The main attack surfaces are:
