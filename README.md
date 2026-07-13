@@ -182,7 +182,7 @@ The easiest way to contribute is to **add a new AI or Agent** to the catalog:
 
 ## 📜 License
 
-[MIT](./LICENSE) © 2025 AI Navigator Team
+[MIT](./LICENSE)
 
 ## 🙏 Acknowledgments
 
