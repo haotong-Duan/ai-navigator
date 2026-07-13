@@ -11,7 +11,7 @@
 
 If you discover a security vulnerability in AI Navigator, please report it privately:
 
-**Email:** security@ainavigator.app (placeholder — set this up before going public)
+**Email:** 15102633721@163.com
 
 Please **do not** open a public GitHub issue for security vulnerabilities. We take all reports seriously and will respond within 48 hours.
 
